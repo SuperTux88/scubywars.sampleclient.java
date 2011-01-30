@@ -1,0 +1,58 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>de.tdng2010.game</groupId>
+		<artifactId>scubywars.parent</artifactId>
+		<version>0.5</version>
+	</parent>
+
+	<groupId>de.tdng2010.game</groupId>
+	<artifactId>scubywars.sampleclient.java</artifactId>
+	<version>0.5-SNAPSHOT</version>
+	<packaging>jar</packaging>
+
+	<name>scubywars sample java client</name>
+	<url>http://scubywars.de</url>
+	<inceptionYear>2011</inceptionYear>
+
+	<dependencies>
+		<dependency>
+			<groupId>de.tdng2010.game</groupId>
+			<artifactId>scubywars.library</artifactId>
+			<version>0.5.2</version>
+		</dependency>
+	</dependencies>
+
+	<repositories>
+		<repository>
+			<id>coding4coffee</id>
+			<url>http://nexus.coding4coffee.org/content/groups/public</url>
+			<releases>
+				<enabled>true</enabled>
+			</releases>
+			<snapshots>
+				<enabled>true</enabled>
+				<updatePolicy>always</updatePolicy>
+			</snapshots>
+		</repository>
+	</repositories>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.dstovall</groupId>
+				<artifactId>onejar-maven-plugin</artifactId>
+				<configuration>
+					<mainClass>de.tdng2011.game.sampleclient.java.Client</mainClass>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
+	<scm>
+		<connection>scm:git:git://github.com/fbe/Scubywars-Sample-Javaclient.git</connection>
+		<developerConnection>scm:git:git@github.com:fbe/Scubywars-Sample-Javaclient.git</developerConnection>
+		<url>https://github.com/fbe/Scubywars-Sample-Javaclient</url>
+	</scm>
+</project>
