@@ -31,10 +31,6 @@ public class Client extends AbstractClient {
         // TODO
     }
 
-    public void processScoreBoard(ScoreBoard scoreboard) {
-        // TODO
-    }
-
     //public static Buffer asScalaBuffer(Object... objects) {
     //    return JavaConversions.asScalaBuffer(Arrays.asList(objects));
     //}
