@@ -1,6 +1,7 @@
 package de.tdng2011.game.sampleclient.java;
 
 import de.tdng2011.game.library.World;
+import de.tdng2011.game.library.ScoreBoard;
 import de.tdng2011.game.library.connection.AbstractClient;
 import de.tdng2011.game.library.connection.RelationTypes;
 import scala.collection.JavaConversions;
@@ -27,6 +28,10 @@ public class Client extends AbstractClient {
     }
 
     public void processWorld(World world) {
+        // TODO
+    }
+
+    public void processScoreBoard(ScoreBoard scoreboard) {
         // TODO
     }
 
