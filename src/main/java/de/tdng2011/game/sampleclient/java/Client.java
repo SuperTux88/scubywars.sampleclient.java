@@ -1,5 +1,6 @@
 package de.tdng2011.game.sampleclient.java;
 
+import de.tdng2011.game.library.World;
 import de.tdng2011.game.library.connection.AbstractClient;
 import de.tdng2011.game.library.connection.RelationTypes;
 import scala.collection.JavaConversions;
@@ -25,7 +26,7 @@ public class Client extends AbstractClient {
         return "Java-Client";
     }
 
-    public void processFrame(scala.collection.immutable.List frame) {
+    public void processWorld(World world) {
         // TODO
     }
 
