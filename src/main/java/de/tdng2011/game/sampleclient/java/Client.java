@@ -14,7 +14,7 @@ import java.util.Arrays;
 public class Client extends AbstractClient {
 
     public Client(final String hostname) {
-        super(hostname, RelationTypes.Player());
+        super(hostname, RelationTypes.Player(), true);
     }
 
     public static void main(String... args) throws IOException {
