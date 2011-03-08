@@ -13,6 +13,8 @@ import java.util.Arrays;
 
 public class Client extends AbstractClient {
 
+    private static Client client;
+
     public Client(final String hostname) {
         super(hostname, RelationTypes.Player(), true);
     }
@@ -20,7 +22,9 @@ public class Client extends AbstractClient {
     public static void main(String... args) throws IOException {
         System.out.println("Sample java client");
 
-        new Client("remote.coding4coffee.org");
+        client = new Client("test.scubywars.de");
+
+        client.action(true, false, true, true);
     }
 
     public String name() {
