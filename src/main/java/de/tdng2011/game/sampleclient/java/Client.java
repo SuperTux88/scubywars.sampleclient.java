@@ -33,8 +33,8 @@ public class Client extends AbstractClient {
 
 	@Override
 	public void processWorld(final World world) {
-        List<Player> players = JavaConversions.asJavaList(world.players());
-        List<Shot> shots = JavaConversions.asJavaList(world.shots());
+		List<Player> players = JavaConversions.asJavaList(world.players());
+		List<Shot> shots = JavaConversions.asJavaList(world.shots());
 		// TODO
 	}
 }
