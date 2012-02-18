@@ -1,10 +1,14 @@
 package de.tdng2011.game.sampleclient.java;
 
 import java.io.IOException;
+import java.util.List;
 
+import de.tdng2011.game.library.Player;
+import de.tdng2011.game.library.Shot;
 import de.tdng2011.game.library.World;
 import de.tdng2011.game.library.connection.AbstractClient;
 import de.tdng2011.game.library.connection.RelationTypes;
+import scala.collection.JavaConversions;
 
 public class Client extends AbstractClient {
 
@@ -29,6 +33,8 @@ public class Client extends AbstractClient {
 
 	@Override
 	public void processWorld(final World world) {
+        List<Player> players = JavaConversions.asJavaList(world.players());
+        List<Shot> shots = JavaConversions.asJavaList(world.shots());
 		// TODO
 	}
 }
